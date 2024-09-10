@@ -13,8 +13,8 @@ document.getElementById("submit").onclick = function(){
     let CE_fuelMultiplied = CE_fuel * 230;
     let CE_electricityMultiplied = CE_electricity * 127;
     TCE = CE_coalprodMultiplied + CE_fuelMultiplied + CE_electricityMultiplied;
-    let Tree_TCE = TCE; // Number of Trees
-    let land_area = TCE; // Land Area
+    let Tree_TCE = TCE * 0.042; // Number of Trees
+    let land_area = TCE * 0.0002; // Land Area
 
 
 
