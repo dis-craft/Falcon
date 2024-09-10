@@ -9,7 +9,7 @@ document.getElementById("submit").onclick = function(){
     document.getElementById("CE-output-coal-prod").textContent = `Coal produced ${CE_coalprod}`
 
     CE_vehicles = document.getElementById("no-of-vehicles").value;
-    document.getElementById("CE-output-vehicles").textContent = `Coal produced ${CE_vehicles}`
+    document.getElementById("CE-output-vehicles").textContent = `Number of vehicles ${CE_vehicles}`
 
     CE_fuel = document.getElementById("fuel").value;
     document.getElementById("CE-output-fuel").textContent = `Fuel used is ${CE_fuel}`
@@ -17,4 +17,3 @@ document.getElementById("submit").onclick = function(){
     CE_fuel = document.getElementById("electricity").value;
     document.getElementById("CE-output-electricity").textContent = `Electricity used is ${CE_fuel}`   
 }
-
