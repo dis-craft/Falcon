@@ -14,6 +14,6 @@ document.getElementById("submit").onclick = function(){
     CE_fuel = document.getElementById("fuel").value;
     document.getElementById("CE-output-fuel").textContent = `Fuel used is ${CE_fuel}`
 
-    CE_fuel = document.getElementById("electricity").value;
-    document.getElementById("CE-output-electricity").textContent = `Electricity used is ${CE_fuel}`   
+    CE_electricity = document.getElementById("electricity").value;
+    document.getElementById("CE-output-electricity").textContent = `Electricity used is ${CE_electricity}`   
 }
