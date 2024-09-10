@@ -22,6 +22,6 @@ document.getElementById("submit").onclick = function(){
     let Tree_TCE = TCE * 0.042; // Number of Trees
     let land_area = TCE * 0.0002; // Land Area
 
-    document.getElementById("CE-output-tree").textContent = `Number of Trees: ${Math.floor(Tree_TCE)}`;
+    document.getElementById("CE-output-tree").textContent = `Number of Trees: ${Math.round(Tree_TCE)}`;
     document.getElementById("CE-output-land").textContent = `Land Area ${land_area.toFixed(3)} Acres`;
 }
