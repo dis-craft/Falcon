@@ -28,51 +28,55 @@
         </div>
         
         <div class="mainbody1">
-
             <div class="intro">Calculation of <br> Carbon Emission.</div>
             <div class="CE-mainbody">    
-                <div class="ce-input">   
- <br>
-                <label>Coal produced (one year):</label>
-                <input type="number" id="coal-produced" class="CE-input" placeholder="In Metric tonnes"> <br>
+                <div class="ce-input">    
+                        <br><label>Coal produced (one year):</label>
+                        <input type="number" id="coal-produced" class="CE-input" placeholder="In Metric tonnes"> <br>
             
-                <label>Number of Vehicles:</label>
-                <input type="number" id="no-of-vehicles" class="CE-input" placeholder="In Number"> <br>
+                        <label>Number of Vehicles:</label>
+                        <input type="number" id="no-of-vehicles" class="CE-input" placeholder="In Number"> <br>
             
-                <label>Amount of fuel used (one year):</label>
-                <input type="number" id="fuel" class="CE-input" placeholder="In Kilo-Litres"><br>
+                        <label>Amount of fuel used (one year):</label>
+                        <input type="number" id="fuel" class="CE-input" placeholder="In Kilo-Litres"><br>
                    
-                <label>Amount of electricity used (one year):</label>
-                <input type="number" id="electricity" class="CE-input" placeholder="In MWH"><br>
+                        <label>Amount of electricity used (one year):</label>
+                        <input type="number" id="electricity" class="CE-input" placeholder="In MWH"><br>
                 
-                <button id="submit" class="CE-submit">Estimate Emissions</button>
+                        <button id="submit" class="CE-submit">Estimate Emissions</button>
+                    <div id="ce-output">
+                        <!--
+                        <span id="CE-output-coal-prod"></span> <br>
+                        <span id="CE-output-vehicles"></span> <br>
+                        <span id="CE-output-fuel"></span> <br>
+                        <span id="CE-output-electricity"></span> <br> -->         
+                        <span id="CE-output-total"></span><br>
+                        <span id="CE-output-tree"></span><br>
+                        <span id="CE-output-land"></span><br>
+                    </div>
+                </div>
             </div>
-            
-            <div id="output">
-         <!--
-                <span id="CE-output-coal-prod"></span> <br>
-                <span id="CE-output-vehicles"></span> <br>
-                <span id="CE-output-fuel"></span> <br>
-                <span id="CE-output-electricity"></span> <br> -->         
-                <span id="CE-output-total"></span><br>
-                <span id="CE-output-tree"></span><br>
-                <span id="CE-output-land"></span><br>
-            </div>
-        </div>
+
         </div>
         
         <div class="mainbody12">
+            <img src="download.svg" class="Graph">
+            <div class="textinmb12">The image is a bar chart depicting the volume of coal imports or production in India from 2018 to 2022. The x-axis represents the years, and the y-axis represents the volume, with values ranging from 750 to 910 (units are not specified).
 
+                Here are the key observations:
+                
+                Overall Trend: The volume of coal has generally increased over the years, with a significant jump from 2020 to 2021.
+                Specific Values:
+                In 2018, the volume was around 760,400 units.
+                In 2019, it increased to around 753,900 units.
+                In 2020, it decreased slightly to 760,200 units.
+                In 2021, there was a substantial increase to 812,300 units.
+                In 2022, the highest volume was recorded at 910,900 units.</div>
         </div>
-
-        <div class="mainbody13">
-
-        </div>
-
-        
-            
+    </div>       
 <div class="mainbody2"><span>&#169; All rights reserved. 2024 Srikar Production.</span></div>
             
+
     <script src="index.js"></script>
 </body>
 </html>

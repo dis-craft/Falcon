@@ -56,13 +56,29 @@ html, body {
     justify-content: space-around; 
     gap: 100px;
     align-items: center;   
+    background: rgb(208,200,214);
+    background: radial-gradient(circle, rgba(208,200,214,1) 1%, rgba(186,179,191,1) 9%, rgba(33,33,34,1) 89%, rgba(24,24,25,1) 100%);
+}
+
+.ce-input{
+    background: rgba(65,119,211,0.2);
+    -webkit-backdrop-filter: blur(36px);
+    backdrop-filter: blur(36px);
+    border: 1px solid rgba(65,119,211,0.1);
+    border-radius: 10px;
+    padding: 30px;
+    background: rgba(244,247,252,0.65);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(244,247,252,0.325);
+    color: black;
 }
 
 .mainbody12{
     background-color: rgb(147, 126, 165);
     height: 600px;
     display: flex;
-    justify-content: space-around; 
+    justify-content: left; 
     gap: 100px;
     align-items: center;   
 }
@@ -104,5 +120,10 @@ html, body {
 
 .CE-mainbody{
     color: white;
+}
+
+.Graph{
+    width: 600px;
+
 }
 
