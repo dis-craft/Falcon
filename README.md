@@ -1,2 +1,0 @@
-# Falcon
- SIH Competitors
