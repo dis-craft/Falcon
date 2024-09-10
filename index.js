@@ -20,6 +20,6 @@ document.getElementById("submit").onclick = function(){
     CE_electricityMultiplied = CE_electricity * 0.27;
     document.getElementById("CE-output-electricity").textContent = `Carbon emission from Electricity used in one year is ${CE_electricityMultiplied}KG`
     
-    TCE = CE_coalprodMultiplied + CE_vehicles + CE_fuelMultiplied + CE_electricityMultiplied;
+    TCE = CE_coalprodMultiplied + CE_fuelMultiplied + CE_electricityMultiplied;
     document.getElementById("CE-output-total").textContent = `Total Carbon emission in one year is ${TCE}KG`
 }
