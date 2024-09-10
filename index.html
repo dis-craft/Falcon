@@ -8,8 +8,42 @@
 
 </head>
 <body>
-    <h1>Carbon Emission Estimator</h1>
-    <!-- <form id="emissionForm"> -->
+
+    <div class="ulti-body">
+
+        <div class="headbar">
+            
+            <div><a href="index.html">
+                <img src="mainlogo.png" class="logo"></a>
+            </div>
+
+            <div class="leftsections">
+                <a href="Contact.html"class="headbarelements">Contact</a>
+                <a href="About.html"class="headbarelements">About</a>
+            </div>
+
+        </div>
+        
+        <div class="mainbody1">
+
+            <div class="intro">Calculation of
+                <br>Carbon Emission.
+            </div>
+
+            <div><img src="Images/R.png" class="mainimage"></div>
+        </div>
+        
+
+            
+            <div class="mainbody2">
+                <span>&#169; All rights reserved. 2024 Srikar Production.</span>
+            </div>
+
+
+    </div>
+
+    <div class="ce-input">   
+        <span class="CE-header">Carbon Emission Estimator</span> <br>
         <label>Coal produced (one year):</label>
         <input type="number" id="coal-produced" class="CE-input" placeholder="In Metric tonnes"> <br>
 
@@ -23,19 +57,18 @@
         <input type="number" id="electricity" class="CE-input" placeholder="In MWH"><br>
         
         <button id="submit" class="CE-submit">Estimate Emissions</button>
-    <!-- </form>  -->
-    <script src="index.js"></script>
+    </div>
 
     <div id="output">
-
-        <span id="CE-output-coal-prod"></span> <br>
+        <!--        <span id="CE-output-coal-prod"></span> <br>
         <span id="CE-output-vehicles"></span> <br>
         <span id="CE-output-fuel"></span> <br>
-        <span id="CE-output-electricity"></span> <br>
-        <span id="CE-output-total"></span> <br>
+        <span id="CE-output-electricity"></span> <br> -->
+
+        <span id="CE-output-total"></span><br>
         <span id="CE-output-tree"></span><br>
         <span id="CE-output-land"></span><br>
-        <span id="CE-output-tonnes-of-CE"></span><br>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
