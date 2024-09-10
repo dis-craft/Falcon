@@ -21,6 +21,7 @@ document.getElementById("submit").onclick = function(){
     document.getElementById("CE-output-total").textContent = `Total Carbon emission in one year is ${TCE.toFixed(3)} KG`;
     let Tree_TCE = TCE * 0.042; // Number of Trees
     let land_area = TCE * 0.0002; // Land Area
-    document.getElementById("CE-output-tree").textContent = `Number of Trees ${Tree_TCE.toFixed(3)}`
-    document.getElementById("CE-output-land").textContent = `Land Area ${land_area.toFixed(3)}`
+
+    document.getElementById("CE-output-tree").textContent = `Number of Trees: ${Math.floor(Tree_TCE)}`;
+    document.getElementById("CE-output-land").textContent = `Land Area ${land_area.toFixed(3)} Acres`;
 }
