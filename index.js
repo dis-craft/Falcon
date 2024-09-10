@@ -22,4 +22,12 @@ document.getElementById("submit").onclick = function(){
 
     TCE = CE_coalprodMultiplied + CE_fuelMultiplied + CE_electricityMultiplied;
     document.getElementById("CE-output-total").textContent = `Total Carbon emission in one year is ${TCE.toFixed(3)} KG`;
+    
+    let Tree_TCE; //Number of Trees
+    let land_area; //Land Area
+    
+    Tree_TCE = TCE * 0.042;
+    land_area = TCE * 0.0002;
+    document.getElementById("CE-output-tree").textContent = `Number of Trees ${Tree_TCE.toFixed(3)}`
+    document.getElementById("CE-output-land").textContent = `Land Area ${land_area.toFixed(3)}`
 }
