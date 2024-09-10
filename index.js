@@ -5,15 +5,21 @@ let CE_fuel; //Carbon Emission from fuel
 let CE_electricity; //Carbon Emission from electricity
 
 document.getElementById("submit").onclick = function(){
-    CE_coalprod = document.getElementById("coal-produced").value;
-    document.getElementById("CE-output-coal-prod").textContent = `Coal produced ${CE_coalprod}`
+    CE_coalprod = parseFloat(document.getElementById("coal-produced").value);
+    CE_coalprodMultiplied = CE_coalprod * 30;
+    document.getElementById("CE-output-coal-prod").textContent = `Carbon emission from coal production in one year is ${CE_coalprodMultiplied}KG`
 
-    CE_vehicles = document.getElementById("no-of-vehicles").value;
+    CE_vehicles = parseFloat(document.getElementById("no-of-vehicles").value);
     document.getElementById("CE-output-vehicles").textContent = `Number of vehicles ${CE_vehicles}`
 
-    CE_fuel = document.getElementById("fuel").value;
-    document.getElementById("CE-output-fuel").textContent = `Fuel used is ${CE_fuel}`
+    CE_fuel = parseFloat(document.getElementById("fuel").value);
+    CE_fuelMultiplied = CE_fuel * 2.3;
+    document.getElementById("CE-output-fuel").textContent = `Carbon emission from Fuel used in vehicles in one year is ${CE_fuelMultiplied}KG`
 
-    CE_electricity = document.getElementById("electricity").value;
-    document.getElementById("CE-output-electricity").textContent = `Electricity used is ${CE_electricity}`   
+    CE_electricity = parseFloat(document.getElementById("electricity").value);
+    CE_electricityMultiplied = CE_electricity * 0.27;
+    document.getElementById("CE-output-electricity").textContent = `Carbon emission from Electricity used in one year is ${CE_electricityMultiplied}KG`
+    
+    TCE = CE_coalprodMultiplied + CE_vehicles + CE_fuelMultiplied + CE_electricityMultiplied;
+    document.getElementById("CE-output-total").textContent = `Total Carbon emission in one year is ${TCE}KG`
 }
