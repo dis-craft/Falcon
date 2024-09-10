@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carbon Emission Estimator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    HELLO WORLD
+    <h1>Carbon Emission Estimator</h1>
+    <form id="emissionForm">
+        <label for="excavation">Coal produced (Metric-tonnes in one year):</label>
+        <input type="number" id="coal-produced" class="coal-produced"> <br>
+
+        <label for="no-of-vehicles">Number of Vehicles:</label>
+        <input type="number" id="no-of-vehicles" class="no-of-vehicles"> <br>
+
+        <label for="fuel">Amount of fuel used (Litres in one year):</label>
+        <input type="number" id="equipment" name="equipment"><br>
+           
+        <label for="electricity">Amount of electricity used (KWH in one year):</label>
+        <input type="number" id="equipment" name="equipment"><br>
+        
+        <button type="submit">Estimate Emissions</button>
+    </form>
+    <div id="results"></div>
 </body>
 </html>
