@@ -10,9 +10,9 @@ document.getElementById("submit").onclick = function(){
     CE_fuel = parseFloat(document.getElementById("fuel").value);
     CE_electricity = parseFloat(document.getElementById("electricity").value);
 
-    CE_coalprodMultiplied = (CE_coalprod * 30).toFixed(3);
-    CE_fuelMultiplied = (CE_fuel * 230).toFixed(3);
-    CE_electricityMultiplied = (CE_electricity * 127).toFixed(3);
+    CE_coalprodMultiplied = (CE_coalprod * 30);
+    CE_fuelMultiplied = (CE_fuel * 230);
+    CE_electricityMultiplied = (CE_electricity * 127);
 
     document.getElementById("CE-output-coal-prod").textContent = `Carbon emission from coal production in one year is ${CE_coalprodMultiplied}KG`
     document.getElementById("CE-output-vehicles").textContent = `Number of vehicles ${CE_vehicles}`
